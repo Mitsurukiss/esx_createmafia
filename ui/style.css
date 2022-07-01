@@ -1,0 +1,536 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
+}
+body {
+  background-color: #24282f;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#canvas-number {
+  width: 680px;
+  height: 420px;
+}
+
+@import "https://fonts.googleapis.com/css?family=Montserrat:300,400,700";
+.rwd-table {
+
+	min-width: 300px;
+	width: 470px;
+	margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+	color: white;
+}
+.rwd-table tr {
+    border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.rwd-table th {
+  display: none;
+}
+.rwd-table td {
+  display: block;
+}
+.rwd-table td:first-child {
+  padding-top: .5em;
+}
+.rwd-table td:last-child {
+  padding-bottom: .5em;
+}
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: normal;
+
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  .rwd-table td:before {
+    display: none;
+  }
+}
+.rwd-table th, .rwd-table td {
+  text-align: left;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child, .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child, .rwd-table td:last-child {
+    padding-right: 0;
+  }
+}
+
+body {
+  padding: 0 2em;
+  font-family: Arial;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #444;
+  background: transparent;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: rgb(213, 216, 53);
+  margin-left: 5%;
+  text-shadow: #dd5;
+  font-size: 30px;
+}
+
+.rwd-table {
+	background: rgb(19 12 11 / 75%);
+	color: #fff;
+	border-radius: .2em;
+	overflow: hidden;
+	min-width: 300px;
+	width: 470px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 15px;
+	margin-top:15px;
+}
+.rwd-table tr {
+    border-top: 1px solid #3c3535;
+    border-bottom: 1px solid #3c3535;
+}
+
+.rwd-table th, .rwd-table td {
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    padding: 15px 20px !important;
+  }
+}
+.rwd-table th, .rwd-table td:before {
+  color: #e0d9d3;
+  font-weight:normal;
+}
+
+.rwd-table th.position {
+
+  text-align:center;
+  padding-right: 5px!important;
+  padding-left: 25px!important;
+  border-right:1px solid #3c3535;
+}
+
+.rwd-table th.name {
+
+  /* border-right:1px solid #3c3535; */
+  border-right:1px solid #3c3535;
+}
+
+.rwd-table th.points {
+ 
+  /* text-shadow:0 0 10px #a27800; */
+  border-right:1px solid #3c3535;
+  padding-right: 0px!important;
+}
+
+.rwd-table th.kda {
+ 
+  /* text-shadow:0 0 10px #9dff00; */
+  padding-right: 0px!important;
+}
+
+.rwd-table th.first {
+	color:#ffe420;
+	border-right:1px solid #846900;
+}
+
+.rwd-table th.second {
+	color:#fff;
+	border-right:1px solid #848484;
+}
+
+.rwd-table th.third {
+	color:#dc8d67;
+	border-right:1px solid #902f00;
+}
+
+.rwd-table tr.first {
+  background: url('images/first.png') 4px 6px no-repeat, rgba(120, 100, 0, 0.8);
+}
+
+.rwd-table tr.second {
+  background: url('images/second.png') 4px 6px no-repeat, rgba(120, 120, 120, 0.8);
+}
+
+.rwd-table tr.third {
+  background: url('images/third.png') 4px 6px no-repeat, rgba(120, 40, 0, 0.8);
+}
+
+.scoreboard {
+  /* margin-left: 42%;*/
+  margin-top: 160px;
+  background:url('images/background.gif') top center no-repeat;
+  width:510px;
+  height:720px;
+  padding:20px 20px;
+}
+
+.mafia-content {
+	margin-top:200px;
+	padding: 10px 0;
+	margin-left:23px;
+	margin-right:23px;
+	background:rgb(19 12 11 / 75%);
+	border-top:solid 1px #3c3535;
+	border-bottom:solid 1px #3c3535;
+}
+
+.mafia-name {
+
+	font-size:36px;
+	font-weight:700;
+	text-shadow:0 0 15px rgb(255, 0, 242);
+	color: #ffe04a;
+  text-align: center;
+  -webkit-animation: glow 0.5s ease-in-out infinite alternate;
+  -moz-animation: glow 0.5s ease-in-out infinite alternate;
+  animation: glow 0.5s ease-in-out infinite alternate;
+}
+
+.glow {
+
+  color: #ffe04a;
+  text-align: center;
+  -webkit-animation: glow 0.5s ease-in-out infinite alternate;
+  -moz-animation: glow 0.5s ease-in-out infinite alternate;
+  animation: glow 0.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #ffb31e, 0 0 15px #c50b00, 0 0 25px #c50b00, 0 0 35px #c50b00, 0 0 45px #c50b00, 0 0 55px #c50b00, 0 0 65px #c50b00;
+  }
+  
+  to {
+    text-shadow: 0 0 15px #7b2900, 0 0 20px #7b2900, 0 0 25px #7b2900, 0 0 30px #7b2900, 0 0 35px #7b2900;
+  }
+}
+
+.mafia-rank-bg {
+	background: url('images/mafia-bg.png') center center no-repeat;
+	width:220px;
+	height:60px;
+	border-left:solid 5px #f32200;
+	box-shadow:inset 0 0 15px #f32200;
+}
+
+.mafia-rank-icon {
+	color:#fff;
+	background:#f32200;
+	padding:8px;
+	font-size:14px;
+	border-radius:2px;
+	margin-right:2px;
+	text-shadow:none;
+}
+
+.mafia-rank-title {
+	line-height:60px;
+	padding-left:15px;
+	font-size:18px;
+	text-shadow:0 0 10px #000;
+}
+
+.rank {
+	color:#ff4628;
+	text-shadow:0 0 10px #f32200;
+}
+
+.mafia-points-bg {
+	background: url('images/mafia-bg.png') center center no-repeat;
+	width:220px;
+	height:60px;
+	border-left:solid 5px #00d241;
+	box-shadow:inset 0 0 15px #00ec49;
+}
+
+.mafia-points-icon {
+	color:#fff;
+	background:#00d241;
+	padding:8px;
+	font-size:14px;
+	border-radius:2px;
+	margin-right:2px;
+	text-shadow:none;
+}
+
+.mafia-points-title {
+	line-height:60px;
+	padding-left:15px;
+	font-size:18px;
+	text-shadow:0 0 10px #000;
+}
+
+.points {
+	color:#12ff5b;
+	text-shadow:0 0 10px #00e848;
+}
+
+.mafia-bg {
+	background: #252525;
+	width:220px;
+	height:60px;
+	border-left:solid 5px #555;
+}
+
+.mafia-bg:hover {
+	border-left:solid 5px #ec2222;
+	box-shadow:inset 0 0 15px #444;
+}
+
+.mafia-icon {
+	color:#fff;
+	background:#ec2222;
+	padding:8px;
+	font-size:14px;
+	border-radius:2px;
+	margin-right:5px;
+	text-shadow:none;
+}
+
+
+.mafia-action{
+	color:#fff;
+	text-decoration:none;
+}
+
+.mafia-title {
+	line-height:60px;
+	padding-left:15px;
+	font-size:16px;
+	text-shadow:0 0 10px #000;
+}
+
+
+.back-bg {
+	background: rgb(59 52 51 / 55%);
+	width:300px;
+	height:45px;
+	border-radius:2px;
+}
+
+.back-bg:hover {
+	box-shadow:inset 0 0 15px #69564e;
+}
+
+
+.back-title {
+	line-height:45px;
+	font-size:16px;
+	text-shadow:0 0 10px #000;
+}
+
+.closeBtn {
+	background: url('images/button1.gif') top center no-repeat;
+	/* background-color:#da3f33; */
+	border-radius:3px;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding: 8px 35px;
+	line-height:25px;
+	text-decoration:none;
+	cursor: pointer;
+    border: none;
+	text-shadow:0px 0px 8px #ff00ff;
+	transition: 0.3s;
+}
+
+.closeBtn:hover {
+	box-shadow: 0 0 20px rgb(255 0 0 / 70%);
+    text-shadow: 0px 0px 8px #ea00ff;
+}
+
+#wrap {
+    display: none;
+    position: relative;
+	font-family: 'Segoe UI';
+	overflow: auto;
+	width: 550px;
+	min-height: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url('images/backgroundc.gif') top center no-repeat;
+	color: rgba(255, 255, 255, 0.9);
+	margin-top: 8%;
+	border-radius:5px;
+	box-shadow: 0 0 50px rgba(0,0,0,0.4);
+
+}
+#wrap .buttons {
+    position:absolute; 
+    bottom: 25px;
+    left: 50%;
+    margin-left: -250px; 
+}
+.header {
+    padding-top: 27%;
+    font-weight: 400;
+    font-size: 25px;
+	padding-bottom: 0%;
+	width:92%;
+	margin:0 auto;
+    text-align: center;
+    border-bottom: 5px;
+	
+}
+
+.header a {
+	padding: 5%;
+}
+
+.war-alliance {
+	width: 92%;
+	margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+	color: white;
+}
+
+.playerlist {
+	width: 92%;
+	margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+	color: white;
+}
+
+.playerlist th{
+	color: #ffd45b;
+}
+
+.create-button {
+	border-radius:2px;
+	cursor:pointer;
+}
+
+.closeBtn {
+	background: url('images/button1.gif') top center no-repeat;
+	/* background-color:#da3f33; */
+	border-radius:3px;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding: 8px 45px;
+	line-height:25px;
+	text-decoration:none;
+	cursor: pointer;
+    border: none;
+	text-shadow:0px 0px 8px #ff00d4;
+	transition: 0.3s;
+}
+.closeBtn:hover {
+	box-shadow: 0 0 20px rgb(255 0 0 / 70%);
+    text-shadow: 0px 0px 8px #e100ff;
+}
+
+.cartelBtn {
+	background: url('images/create-cartel.png') top center no-repeat;
+	/* background-color:#da3f33; */
+	border-radius:3px;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	width:160px;
+	padding: 8px 0px;
+	line-height:25px;
+	text-decoration:none;
+	cursor: pointer;
+    border: 1px solid #3b3b3b;
+	text-shadow:0px 0px 8px #3b3b3b;
+	transition: 0.3s;
+}
+
+.mafiaBtn {
+	background: url('images/create-mafia.png') top center no-repeat;
+	/* background-color:#da3f33; */
+	border-radius:3px;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	width:160px;
+	padding: 8px 0px;
+	line-height:25px;
+	text-decoration:none;
+	cursor: pointer;
+    border: 1px solid #3b3b3b;
+	text-shadow:0px 0px 8px #3b3b3b;
+	transition: 0.3s;
+}
+
+.gangBtn {
+	background: url('images/create-gang.png') top center no-repeat;
+	/* background-color:#da3f33; */
+	border-radius:3px;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	width:160px;
+	padding: 8px 0px;
+	line-height:25px;
+	text-decoration:none;
+	cursor: pointer;
+    border: 1px solid #3b3b3b;
+	text-shadow:0px 0px 8px #3b3b3b;
+	transition: 0.3s;
+}
+
+.greyBtn:hover {
+	box-shadow: 0 0 20px rgb(90,90,90, 0.3);
+    text-shadow: 0px 0px 12px #afafaf;
+	border: 1px solid #3b3b3b;
+}
+
+.greyBtn2 {
+	background: url('images/button-grey.png') top center no-repeat;
+	/* background-color:#da3f33; */
+	border-radius:3px;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	width:200px;
+	padding: 8px 0px;
+	line-height:25px;
+	text-decoration:none;
+	cursor: pointer;
+    border: 1px solid #3b3b3b;
+	text-shadow:0px 0px 8px #3b3b3b;
+	transition: 0.3s;
+}
+.greyBtn2:hover {
+	box-shadow: 0 0 20px rgb(90,90,90, 0.3);
+    text-shadow: 0px 0px 12px #afafaf;
+	border: 1px solid #3b3b3b;
+}
+
+
+
+
+
+
+
+*, *::after, *::before {
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-app-region: no-drag;
+	cursor: default;
+}
